@@ -1,9 +1,9 @@
 Package: love.litten.batterybuddy
-Name: BatteryBuddy ⚡️
-Depends: mobilesubstrate
+Name: Battery Buddy ⚡️
+Depends: ${ORION}, firmware (>= 13)
 Version: 1.0.2
 Architecture: iphoneos-arm
 Description: Battery indicator, but cute
-Maintainer: cluda
-Author: cluda & neilsardesai
+Maintainer: Litten
+Author: Litten
 Section: Tweaks

@@ -1,7 +1,8 @@
 TWEAK_NAME = BatteryBuddy
-BatteryBuddy_FILES = BatteryBuddy.x
-BatteryBuddy_CFLAGS = -fobjc-arc -DTHEOS_LEAN_AND_MEAN
-BatteryBuddy_FRAMEWORKS = UIKit
+$(TWEAK_NAME)_FILES = $(shell find Sources/BatteryBuddy -name '*.swift') $(shell find Sources/BatteryBuddyC -name '*.m' -o -name '*.c' -o -name '*.mm' -o -name '*.cpp')
+$(TWEAK_NAME)_SWIFTFLAGS = -ISources/BatteryBuddyC/include
+$(TWEAK_NAME)_CFLAGS = -fobjc-arc -DTHEOS_LEAN_AND_MEAN
+$(TWEAK_NAME)_FRAMEWORKS = UIKit
 
 include $(THEOS)/makefiles/common.mk
 include $(THEOS_MAKE_PATH)/tweak.mk

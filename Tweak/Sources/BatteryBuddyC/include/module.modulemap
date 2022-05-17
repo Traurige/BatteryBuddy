@@ -1,0 +1,4 @@
+module BatteryBuddyC {
+    umbrella "."
+    export *
+}
